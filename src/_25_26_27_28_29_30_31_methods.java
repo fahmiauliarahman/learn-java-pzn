@@ -1,4 +1,4 @@
-public class _25_methods {
+public class _25_26_27_28_29_30_31_methods {
     /*
         Method: a method is a block of code that performs a specific task.
         it is similar to a function in other programming languages.
@@ -31,8 +31,8 @@ public class _25_methods {
         System.out.println("Hello World!");
     }
 
-    // example of method with parameter
-    public static void sayHelloTo(String name) {
+    // example of method overloading, it is okay if the args is different.
+    public static void sayHello(String name) {
         System.out.println("Hello " + name + "!");
     }
 
@@ -41,11 +41,27 @@ public class _25_methods {
         return a + b;
     }
 
+    // method variable arguments
+    public static void sayCongrats(String name, int[] scores) {
+        int total = 0;
+        for (int score : scores) {
+            total += score;
+        }
+
+        if ((total / scores.length) > 70) {
+            System.out.println("Congrats " + name + "!");
+        } else {
+            System.out.println("Nice try " + name + "!");
+        }
+    }
+
     public static void main(String[] args) {
         sayHello();
-        sayHelloTo("Fahmi");
+        sayHello("Fahmi");
 
         int c = sum(1, 2);
         System.out.println(c);
+
+        sayCongrats("Fahmi", new int[]{90, 90, 85});
     }
 }
