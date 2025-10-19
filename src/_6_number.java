@@ -33,5 +33,16 @@ public class _6_number {
 
         System.out.println("hexNum = " + hexNum);
         System.out.println("binaryNum = " + binaryNum);
+
+        // converting data type aka casting
+        // there are two type casting
+        // widening (automatic) -> byte -> short -> int -> long -> float -> double
+        // narrow (manual) -> double -> float -> long -> int -> short -> byte (beware of number overflow).
+
+        // example of narrow cast
+        float newFloatNum = 1337.123F;
+        int newIntNum = (int) newFloatNum;
+
+        System.out.println("newIntNum = " + newIntNum);
     }
 }
