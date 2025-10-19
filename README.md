@@ -8,7 +8,7 @@ This repository contains notes, code samples, and exercises from the **Java** co
 - Get ready for advanced topics like Spring Boot, Android, or backend development
 
 ## 🛠️ My Tools
-- JDK 25 (i use openjdk 25, but latest LTS is recommended)
+- JDK 21 (LTS)
 - IntelliJ IDEA
 - Maven (optional but recommended)
 - Git (for collaboration and backup)
