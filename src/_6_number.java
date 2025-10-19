@@ -24,5 +24,14 @@ public class _6_number {
 
         System.out.println("floatNum = " + floatNum);
         System.out.println("doubleNum = " + doubleNum);
+
+        // literals
+        // hex: to mark the number as hex, we can add 0x in front of the value like this
+        int hexNum = 0xFFF;
+        // binary: to mark the number as binary, we can add 0b in front of the value like this
+        int binaryNum = 0b1010;
+
+        System.out.println("hexNum = " + hexNum);
+        System.out.println("binaryNum = " + binaryNum);
     }
 }
