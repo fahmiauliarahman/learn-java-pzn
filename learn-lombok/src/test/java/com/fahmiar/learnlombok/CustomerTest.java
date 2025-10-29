@@ -28,4 +28,9 @@ public class CustomerTest {
         Assertions.assertNull(customer.getName());
     }
 
+    @Test
+    void testCustomerToString() {
+        var customer = Customer.create("fahmi");
+        System.out.println(customer);
+    }
 }
