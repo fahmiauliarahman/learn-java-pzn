@@ -16,7 +16,7 @@ public class CustomerTest {
 
     @Test
     void testCustomerConstructorAllArgs() {
-        var customer = Customer.create("Fahmi");
+        var customer = Customer.create("Fahmi", "rahasia");
 
         Assertions.assertEquals("Fahmi", customer.getName());
     }
@@ -30,7 +30,7 @@ public class CustomerTest {
 
     @Test
     void testCustomerToString() {
-        var customer = Customer.create("fahmi");
+        var customer = Customer.create("fahmi", "rahasia");
         System.out.println(customer);
     }
 }
