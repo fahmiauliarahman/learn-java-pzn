@@ -7,7 +7,7 @@ public class CustomerTest {
 
     @Test
     void testCustomer() {
-        var customer = new Customer();
+        var customer = Customer.createEmpty();
 
         // wow we are automatically having setter and getter using lombok!
         customer.setName("Fahmi");
@@ -16,14 +16,14 @@ public class CustomerTest {
 
     @Test
     void testCustomerConstructorAllArgs() {
-        var customer = new Customer("Fahmi");
+        var customer = Customer.create("Fahmi");
 
         Assertions.assertEquals("Fahmi", customer.getName());
     }
 
     @Test
     void testCustomerNoArgs() {
-        var customer = new Customer();
+        var customer = Customer.createEmpty();
 
         Assertions.assertNull(customer.getName());
     }

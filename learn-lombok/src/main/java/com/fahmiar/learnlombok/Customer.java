@@ -3,10 +3,10 @@ package com.fahmiar.learnlombok;
 import lombok.*;
 
 @Getter
-@NoArgsConstructor
-@AllArgsConstructor
+@NoArgsConstructor(staticName = "createEmpty") // automatically create a private and static method
+@AllArgsConstructor(staticName = "create")
 public class Customer {
 
-    @Setter(AccessLevel.PROTECTED) @Getter
+    @Setter(AccessLevel.PROTECTED)
     private String name;
 }
