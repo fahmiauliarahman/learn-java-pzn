@@ -1,10 +1,10 @@
 package com.fahmiar.learnlombok;
 
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Customer {
 
     @Setter(AccessLevel.PROTECTED) @Getter
